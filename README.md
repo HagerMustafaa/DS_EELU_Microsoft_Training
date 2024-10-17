@@ -5,6 +5,6 @@ ________________________________________________________________________________
 SO i decide to learn data science from scratch , i have interesting about data , it is an another world 
          ______________________
          this repo will tell you my journey
-https://res.cloudinary.com/demo/image/upload/c_crop,g_auto,h_250,w_200/docs/hot-air-balloons.jpg
+![My Image](https://images.app.goo.gl/5pzxbByLEYsUjd779)
 
 
