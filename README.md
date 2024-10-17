@@ -5,6 +5,6 @@ ________________________________________________________________________________
 SO i decide to learn data science from scratch , i have interesting about data , it is an another world 
          ______________________
          this repo will tell you my journey
-![My Image](https://images.app.goo.gl/tkdzjCD4DSsimQrPA)
+![My Image](https://img.freepik.com/premium-photo/fiber-optic-fantasia-illuminating-pathways-data-light-through-network-future_674594-45826.jpg)
 
 
