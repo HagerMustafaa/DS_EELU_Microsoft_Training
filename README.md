@@ -5,3 +5,5 @@ ________________________________________________________________________________
 SO i decide to learn data science from scratch , i have interesting about data , it is an another world 
          ______________________
          this repo will tell you my journey
+         ![Alt text](https://images.app.goo.gl/rjvqv6mcd5jn2HnYA)
+
