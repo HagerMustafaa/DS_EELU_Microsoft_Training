@@ -1,0 +1,19 @@
+num1 = 20
+num2 = 30
+product = num1 * num2
+
+if product <= 1000:
+  print(product)
+else:
+  print(num1 + num2)
+
+  #second_example
+
+num3 = 40
+num4 = 30
+product2 = num3 * num4
+
+if product2 <= 1000:
+  print(product2)
+else:
+  print(num3 + num4)
