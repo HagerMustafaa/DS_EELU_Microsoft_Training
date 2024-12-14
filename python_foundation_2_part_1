@@ -1,0 +1,767 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPZ/NXF7U1nzJaeyc1xyEjx"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**Data** **Structure**"
+      ],
+      "metadata": {
+        "id": "3y1XjKsQ3fuj"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##list\n"
+      ],
+      "metadata": {
+        "id": "Yi4tgXQnHKoC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "DZ3nWHUY22ue",
+        "collapsed": true
+      },
+      "outputs": [],
+      "source": [
+        "ls1 = ['apple' ,34 , True , 2.6 , 'banana' ,'orange']\n",
+        "print(ls1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(ls1))"
+      ],
+      "metadata": {
+        "id": "_kX_bol34o7g"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(len(ls1))"
+      ],
+      "metadata": {
+        "id": "PTtwNKQT4vUk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(ls1[0])\n",
+        "print(ls1[1])\n",
+        "print(ls1[-1])\n",
+        "print(ls1[1:4])\n",
+        "print(ls1[:6])\n"
+      ],
+      "metadata": {
+        "id": "KSYnyNBs4784"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "item = input(\"name your fav item : \")\n",
+        "print(item in ls1)"
+      ],
+      "metadata": {
+        "id": "6jpiX3gc7erO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if item in ls1:\n",
+        "  print(f\"yes,{item.capitalize()} is in ls1\")"
+      ],
+      "metadata": {
+        "id": "pDxd6gH276r_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1[1:3] = ['blackcurrant' , 'watermelon']\n",
+        "print(ls1)"
+      ],
+      "metadata": {
+        "id": "yhw95OkGBL6C"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1.insert(1, 34)\n",
+        "print(ls1)"
+      ],
+      "metadata": {
+        "id": "CVAOlOIwDD_j"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1.append('NmNm')\n",
+        "print(ls1)"
+      ],
+      "metadata": {
+        "id": "8mPYcKXBDRI1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1[7:8] = ('NmNm' , 'gege')\n",
+        "print(ls1)"
+      ],
+      "metadata": {
+        "id": "RQ0K3FwrDflY"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1.pop()"
+      ],
+      "metadata": {
+        "id": "ro8XwAK0D70W"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls2 = [7]"
+      ],
+      "metadata": {
+        "id": "Y-lyEhxpEvWk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(ls1.extend(ls2))"
+      ],
+      "metadata": {
+        "id": "5LVfZbb6FDey"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1"
+      ],
+      "metadata": {
+        "id": "TgbULdsiFKX1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(ls1.remove(7))"
+      ],
+      "metadata": {
+        "id": "PaailNPwFM2m"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1"
+      ],
+      "metadata": {
+        "id": "p0m26i8yFUS1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1.append('gege')"
+      ],
+      "metadata": {
+        "id": "RsLukkbNFVLM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1.remove('gege')"
+      ],
+      "metadata": {
+        "id": "qEawHdQ_FvH3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del ls2[0]"
+      ],
+      "metadata": {
+        "id": "vkb1tBtDF1_7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del ls2"
+      ],
+      "metadata": {
+        "id": "sL1DNzMuGnl4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls2.clear()"
+      ],
+      "metadata": {
+        "id": "J3PIr4lDGqlB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## tuple\n"
+      ],
+      "metadata": {
+        "id": "TsghyQEtHQMu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup1 = ('apple' , 34 , True , 2.6 , 'banana' ,'orange')\n",
+        "print(tup1)"
+      ],
+      "metadata": {
+        "id": "oTT2khfSGuJU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(tup1[::2])"
+      ],
+      "metadata": {
+        "id": "vNvNPvpdIQvI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# convert tuple into list, then add NmNm and convert back again into tuple\n",
+        "m = list(tup1)\n",
+        "m.append('NmNm')\n",
+        "tup2 = tuple(m)\n",
+        "print(tup2)"
+      ],
+      "metadata": {
+        "id": "2Wly0dE2JGcu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##set\n"
+      ],
+      "metadata": {
+        "id": "Azhkg61FhSzF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {'apple' ,'banana' ,'orange', 'apple'}\n",
+        "print(set1)"
+      ],
+      "metadata": {
+        "id": "AVqC-tTFhVcI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {'NmNm' , 'gege', True , 1, 2}\n",
+        "print(set2)\n",
+        "# becuse true is 1 and false is 0 , so there is a duplicate"
+      ],
+      "metadata": {
+        "id": "NqhnBsEzj0Dg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1.add('NmNm')\n",
+        "print(set1)"
+      ],
+      "metadata": {
+        "id": "RETXH_3rkMvg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "d4Imls57SXvB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2.update(['apple'])\n",
+        "print(set2)"
+      ],
+      "metadata": {
+        "id": "4uQqV94bk7Sa"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2.remove('apple')\n",
+        "print(set2)\n",
+        "# Error if there is not this item"
+      ],
+      "metadata": {
+        "id": "Xqo72UgblZI-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1.discard('NmNm')\n",
+        "print(set1)\n",
+        "# no error"
+      ],
+      "metadata": {
+        "id": "npN76l7vlicF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1.pop()\n",
+        "print(set1)"
+      ],
+      "metadata": {
+        "id": "6rhO06M2l1Pe"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## dictionary\n"
+      ],
+      "metadata": {
+        "id": "Yo6hUeUXmVh5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dic1 = {\n",
+        "    'brand' : 'Ford',\n",
+        "    'electric' : False ,\n",
+        "    'year' : 1964,\n",
+        "    'year' : 2020\n",
+        "}\n",
+        "print(dic1['year'])"
+      ],
+      "metadata": {
+        "id": "5yOnPNkWcZdP"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dic1 = {\n",
+        "    'brand' : 'Ford',\n",
+        "    'electric' : False ,\n",
+        "    'year' : 1964,\n",
+        "    'colors' : ['red' , 'white' , 'blue']\n",
+        "}\n",
+        "print(dic1['brand'])"
+      ],
+      "metadata": {
+        "id": "hKUSg3F4mY4W"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = dic1.get('brand')\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "id": "CxRhwhDWdTCE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "car = {'brand' : 'Ford',\n",
+        "    'model' : False ,\n",
+        "    'year' : 1964,}\n",
+        "\n",
+        "y = car.keys()\n",
+        "print(y)\n",
+        "\n",
+        "car['color'] = 'white'\n",
+        "print(y)\n",
+        "\n",
+        "print(car)"
+      ],
+      "metadata": {
+        "id": "iR-AWbiYdacW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = car.values()\n",
+        "print(z)"
+      ],
+      "metadata": {
+        "id": "Li6W3OcteqBr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r = car.items()\n",
+        "print(r)"
+      ],
+      "metadata": {
+        "id": "9yAdu4q5jgiM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dic1['year'] = 2020\n",
+        "print(dic1)"
+      ],
+      "metadata": {
+        "id": "jdw19NWmjj_L"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dic1.update({'year' : 2020})"
+      ],
+      "metadata": {
+        "id": "B-qXcDMAjyJr"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dic1.pop('electric')\n",
+        "print(dic1)"
+      ],
+      "metadata": {
+        "id": "zXUl1E1wl1Np"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dic1.popitem()\n",
+        "print(dic1)"
+      ],
+      "metadata": {
+        "id": "MAFr6KeOl75j"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##loops\n"
+      ],
+      "metadata": {
+        "id": "X3GUyfczmFJ-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls1 = ['apple' , 'banana' ,'orange', 'kiwi']\n",
+        "\n",
+        "for element in ls1:\n",
+        "  print(element + 'z')"
+      ],
+      "metadata": {
+        "id": "q-pPk8lNmIGi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while (len(ls1) > 0):\n",
+        "  print(ls1.pop())\n",
+        "  print(ls1)"
+      ],
+      "metadata": {
+        "id": "Rj4ZmvLK7eAG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##function\n"
+      ],
+      "metadata": {
+        "id": "kwrnHJ9P8YlL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def welcom_user(name):\n",
+        "  print(\"Hello\", name)\n",
+        "  print(\"welcome to our store\")\n",
+        "  print(\"how can we help you?\")\n",
+        "  print()"
+      ],
+      "metadata": {
+        "id": "F0POF2fb7v8d"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(welcom_user)"
+      ],
+      "metadata": {
+        "id": "mYvBrTWNeLJu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "welcom_user('hager')\n",
+        "welcom_user('mina')\n",
+        "welcom_user('genm')"
+      ],
+      "metadata": {
+        "id": "NMoQ-ANyeP0i"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#help function\n",
+        "help(print)"
+      ],
+      "metadata": {
+        "id": "687LaEARemtz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "help(welcom_user)"
+      ],
+      "metadata": {
+        "id": "DqeVZ-yOfL8f"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def welcom_user(name):\n",
+        "  #docstring\n",
+        "  \"\"\"\n",
+        "  this finction greets the user by name\n",
+        "  Args:\n",
+        "    name: the name of the user\n",
+        "  \"\"\"\n",
+        "  print(\"Hello\", name)\n",
+        "  print(\"welcome to our store\")\n",
+        "  print(\"how can we help you?\")\n",
+        "  print()"
+      ],
+      "metadata": {
+        "id": "PFEyYbCFfuEO"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "help(welcom_user)"
+      ],
+      "metadata": {
+        "id": "GorGi_bZgLA6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sum (*args):\n",
+        "  sum = 0\n",
+        "  for num in args:\n",
+        "    sum += num\n",
+        "  return sum"
+      ],
+      "metadata": {
+        "id": "AJoOr2JggPSK"
+      },
+      "execution_count": 33,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(sum(1,2,3,4,5,6,7,8,9,10))"
+      ],
+      "metadata": {
+        "id": "ok4Oy1u0hh54"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calculate (n, **kwargs):\n",
+        "  n += kwargs['add']\n",
+        "  n *= kwargs['multiply']\n",
+        "  return n"
+      ],
+      "metadata": {
+        "id": "-Mzd4fzNkWiZ"
+      },
+      "execution_count": 35,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(calculate(3, add=3 , multiply=5))"
+      ],
+      "metadata": {
+        "id": "sOwZbWUPktfa"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
